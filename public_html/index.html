@@ -4,12 +4,36 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<head>
+	<title> Heladería </title>
+	<link rel="stylesheet" type="text/css" href="heladeria.css"/>
+</head>
+<body>
+<form action="heladeria.php" method="post"/>
+	Escoja su sabor: <select name="sel">
+			<option>Escoja su sabor </option>
+			<option> Vainilla</option>
+			<option> Limón</option>
+			<option> Nata</option>
+			<option> Fresa</option>
+			<option> Chocolate</option>
+			<option> Dulce de leche</option>
+	</select>
+	<br>
+		<input type="radio" name="envase" value="cucurucho"> Cucurucho</input>
+		<input type="radio" name="envase" value="tarrina" checked> Tarrina</input>
+		<br>
+		<input type="radio" name="tamaño" value="pequeño" > Pequeño</input>
+		<input type="radio" name="tamaño" value="mediano" checked> Mediano</input>
+		<input type="radio" name="tamaño" value="grande"> Grande</input>
+	<br>
+			<input type="checkbox" name="opcion1" value="virutas">Virutas de chocolate</input>
+			<input type="checkbox" name="opcion2" value="sirope">Sirope</input>
+			<input type="checkbox" name="opcion3" value="cookies">Cookies</input>
+			<input type="checkbox" name="opcion4" value="Cacahuetes">Cacahuetes</input>
+			<br>
+		<button type="submit" name="enviar">Enviar</button>
+		<button type="reset" name="borrar">Reset</button>
+</form>
+</body>
 </html>
