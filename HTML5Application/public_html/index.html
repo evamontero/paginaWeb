@@ -3,13 +3,81 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<head>
+    <title>Pizzería</title>
+</head>
+<body>
+	<div class="uno">
+     <fieldset><legend>Datos personales</legend>
+        <table>
+           <tr><td>Nombre dela reseva</td><td><input type="text" name="nombre"/></td></tr>
+           <tr><td>Teléfono</td><td><input type="text" name="tlf"/></td></tr>
+		   <tr><td>Fecha <br><input type="date" name="fecha" min="2024-10-01" max="2025-12-31"/></td></tr>
+        </table>
+     </fieldset>
+    </div>
+	
+	<div class="dos">
+     <fieldset><legend>Pizzas</legend>
+        <table>
+           <tr><td>
+                 <select name="pizza">
+                    <option>Escoja una opción</option>
+                    <option>Margarita</option>
+                    <option>Cuatro quesos</option>
+                    <option>Diávola</option>
+                </select>
+            </td></tr>
+        </table>
+     </fieldset>
+    </div>
+	
+	<div class="tres">
+     <fieldset><legend>Tamaño de la pizza</legend>
+   <br> <input type="radio" name="tamano" value="pequeño"> Pequeño</input>
+   <br> <input type="radio" name="tamano" value="mediano"> Mediano</input>
+   <br> <input type="radio" name="tamano" value="grande"> Grande</input>
+   </fieldset>
+    </div>
+   
+ <div class="cuatro">
+     <fieldset><legend>Ingredientes</legend>
+    <br> <input type="checkbox" name="champiñones" value="champiñones"> Champiñones</input>
+    <br> <input type="checkbox" name="extra de queso" value="extra de queso"> Extra de queso</input>
+    <br> <input type="checkbox" name="pimientos" value="pimientos"> Piminetos</input>
+    <br> <input type="checkbox" name="aceitunas" value="aceitunas"> Aceitunas</input>
+	</fieldset>
+    </div>
+	
+	<div class="cinco">
+     <fieldset><legend>Bebidas</legend>
+        <table>
+           <tr><td>
+                 <select name="bebida">
+                    <option>Escoja una opción</option>
+                    <option>Agua</option>
+                    <option>Cereveza</option>
+                    <option>Refresco de cola</option>
+					<option>Refresco de naranja</option>
+					<option>Refresco de limón</option>
+                </select>
+            </td></tr>
+        </table>
+     </fieldset>
+    </div>
+	
+	<div class="seis">
+        <fieldset><legend>Enviar</legend>
+            <table>
+               <tr>
+                  <td><button type="submit" name="enviar">Enviar</button></td>
+                  <td><button type="reset" name="borrar">Borrar</button></td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+	
+</body>
 </html>
